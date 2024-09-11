@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.weather-input{
+    width: 30%;
+    position: fixed;
+    inset: 0;
+    background:#78c1f3 ;
+    padding: 1rem , 2.5rem;
+}
+.weatherIcon{
+   background-position: 50% !important;
+   background-repeat: no-repeat !important;
+   background-size: contain;
+   display: block;
+   height: 25%;
+   margin: 2rem auto;
+}
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem,0;
+}
+.input-group input{
+    background: white;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border: solid 2px black;
+}
+.input-group .converter{
+    position: absolute;
+    border: none;
+    outline: none;
+    right: 45px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.input-group .bx{
+    position: absolute;
+    right: 15px;
+    color: black;
+    cursor: pointer;
+    font-size: 22px;
+}
+.weather-output{
+    width: 70%;
+    position: fixed;
+    inset: o;
+    margin-left: 30%;
+    margin-top: 35%;
+    padding: 2rem;
+    background: white;
+    overflow: auto;
+}
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-auto-flow: row;
+    row-gap: 1rem;
+    column-gap: 5px;
+    bottom: 100%;
+    justify-content: space-around;
+}
+.highlight div{
+    height: 150px;
+    width: 250px;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #78c1f3 ;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.highlight i{
+    font-size: 45px;
+}
+.sun span{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
