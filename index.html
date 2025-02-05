@@ -1,75 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather-Forecast</title>
-    <link rel="stylesheet" href="task-3.css">
-    <script defer src="task-3.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="task-3.css" />
 </head>
 <body>
-   <div class="container">
-    <div class="weather-input">
-        <div class="input-group">
-            <input type="text" id="userLocation" placeholder="Search Location">
-            <select class="converter" id="converter">
-                <option>°C</option>
-                <option>°F</option>
-            </select>
-            <i class='bx bx-search-alt' onclick="findUserLocation()"></i>
-        </div>
-        <div class="weatherIcon"></div>
-        <h2 class="temperature"></h2>
-        <div class="feelslike"></div>
-        <div class="discription"></div>
-        <hr/>
-        <div class="date"></div>
-        <div class="city"></div>
-    </div>
-    <div class="weather-output">
-        <h2 class="heading">Today's highlights</h2>
-        <br/>
-        <div class="highlight">
-            <div class="humidity">
-                HUMIDITY
-                <i class='bx bx-water'></i>
-                <h1 id="Hvalue"></h1>
-            </div>
-            <div class="wind-speed">
-                WIND SPEED
-                <i class='bx bx-wind'></i>
-                <h1 id="Wvalue"></h1>
-            </div>
-            <div class="sun">
-                <span>
-                    <i class='bx bx-sun'></i>
-                    <p><span id="SRvalue"></span>Sun Rise</p>
-                </span>
-                <span>
-                    <i class='bx bxs-sun' ></i>
-                    <p><span id="SSvalue"></span>Sun Set</p>
-                </span>
-            </div>
-            <div class="clouds">
-                CLOUDS
-                <i class='bx bx-cloud' ></i>
-                <h1 id="Cvalue"></h1>
-            </div>
-            <div class="uv-index">
-                UV-INDEX
-                <i class='bx bxl-tailwind-css'></i>
-                <h1 id="UVvalue"></h1>
-            </div>
-            <div class="pressure">
-                PRESSURE
-                <i class='bx bxs-hot'></i>
-                <h1 id="Pvalue"></h1>
-            </div>
-        </div>
-        <br/>
-        <h2 class="heading">This week</h2>
-        <div class="forecast"></div>
-    </div>
-   </div> 
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">New York, US</div>
+        <div class="date">Wednesday 22 July 2020</div>
+      </section>
+      <div class="current">
+        <div class="temp">15<span>°c</span></div>
+        <div class="weather">Sunny</div>
+        <div class="hi-low">13°c / 16°c</div>
+      </div>
+    </main>
+  </div>
+  <script src="task-3.js"></script>
 </body>
+</html>
